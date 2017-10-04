@@ -20,7 +20,7 @@ new File(userList).eachLine { l ->
             "--user", apiKey,
             "https://api.mailgun.net/v3/jenkins.io/messages",
 
-            "-F", "from=Jenkins <noreply@jenkins.io>",
+            "-F", "from=IDC Bot <noreply@idontcare.com>",
             "-F", "to=" +email,
             "-F", "subject=Important: Password reset of your Jenkins community account",
             "-F", "text=" +content.replace("{USERID}",userid).replace("{PASSWORD}",password)
